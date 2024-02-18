@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Ticket</title>
+    <!-- cdn links -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+        body {
+            font-family: "Raleway", sans-serif;
+        }
+    </style>
+</head>
+
+<body class="max-w-[1440px] mx-auto">
+    <header class="w-[90%] lg:w-[80%] mx-auto">
+        <!-- navber -->
+        <nav>
+            <div class="navbar flex justify-between px-0">
+                <div class="">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] shadow rounded-box">
+                            <li><a>Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Destination</a></li>
+                            <li><a>Search</a></li>
+                        </ul>
+                    </div>
+                    <a class="btn btn-ghost text-2xl lg:text-4xl font-extrabold">P-Ticket</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal lg:text-lg font-medium text-[#030712b3]">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Destination</a></li>
+                        <li><a>Search</a></li>
+                    </ul>
+                </div>
+                <div class="flex gap-2 border bg-[#1DD10033] px-2 lg:px-4 py-2 rounded-lg border-[#1DD100] text-[#1DD100]">
+                    <a class="lg:text-xl font-bold">Bus</a><img src="./images/bus-icon.png" alt="">
+                </div>
+            </div>
+        </nav>
+        <!-- banner -->
+        <section class="bg-[url('./images/banner.png')] bg-no-repeat bg-cover bg-center rounded-3xl relative">
+            <div class="flex flex-col justify-center items-center space-y-4 h-[400px] lg:h-[550px]">
+                <h1 class="text-center text-2xl lg:text-6xl font-extrabold text-[#fff] leading-1">End-to-End Travel with <br><span class="text-[#1DD100]">P Paribahan</span></h1>
+                <p class="lg:text-lg font-medium text-[#fff] max-w-[90%] lg:max-w-[55%] text-center">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
+                <button class="btn bg-[#1DD100] text-black border-0 hover:border hover:bg-[#1DD10033] hover:border-[#1DD100] hover:text-[#1DD100]">Buy Tickets</button>
+            </div>
+            <div class="flex flex-col lg:flex-row gap-5 relative lg:absolute  lg:bottom-[-50px] transform -translate-x-1/2  left-[50%] lg:min-w-[750px] bottom-[30px]">
+                <div class="flex justify-center items-center gap-5 px-5 rounded-2xl border-b-2 border-[#1DD100] bg-white h-24">
+                    <img src="./images/people.png" alt="">
+                    <div>
+                        <h2 class="text-2xl font-bold">500k+</h2>
+                        <p class="text-sm font-medium">Registered users</p>
+                    </div>
+                </div>
+                <div class="flex justify-center items-center gap-5 px-5 rounded-2xl border-b-2 border-[#1DD100] bg-white h-24">
+                    <img src="./images/ticket-cupon.png" alt="">
+                    <div>
+                        <h2 class="text-2xl font-bold">1.7lacks</h2>
+                        <p>Tickets sold</p>
+                    </div>
+                </div>
+                <div class="flex justify-center items-center gap-5 px-5 rounded-2xl border-b-2 border-[#1DD100] bg-white h-24">
+                    <img src="./images/stoppage.png" alt="">
+                    <div>
+                        <h2 class="text-2xl font-bold">80k</h2>
+                        <p>Rental partners</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <main>
+        <section class="mt-28">
+            
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="./script/index.js"></script>
+</body>
+
+</html>
