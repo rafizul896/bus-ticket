@@ -92,20 +92,17 @@ for (const seat of seats) {
                             discountContainer.appendChild(price);
                             grandTotalCal = totalPrice - discount;
                             grandTotal.innerText = grandTotalCal;
-
-                            // 
-
                         }
                         else {
                             document.getElementById('coupon').value = "";
                             alert('Invalitd Code');
-                            location.reload();
+                            // location.reload();
                         }
                     })
                 }
             }
             else {
-                alert('Kom kore kin');
+                alert('You have selected the highest numbered seat');
                 location.reload();
             }
         }
