@@ -65,7 +65,7 @@ for (const seat of seats) {
                         let grandTotalCal;
 
                         if ((array.length === 4) && (offerDis === input)) {
-                            discount = 550 * 0.15;
+                            discount = totalPrice * 0.15;
                             inputPart.classList.add('hidden')
                             const discountContainer = document.getElementById('discountPrice');
                             const text = document.createElement('h3');
@@ -80,7 +80,7 @@ for (const seat of seats) {
                             grandTotal.innerText = grandTotalCal;
                         }
                         else if ((array.length === 4) && (coupleDis === input)) {
-                            discount = 550 * 0.2;
+                            discount = totalPrice * 0.2;
                             inputPart.classList.add('hidden')
                             const discountContainer = document.getElementById('discountPrice');
                             const text = document.createElement('h3');
