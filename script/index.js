@@ -98,7 +98,8 @@ for (const seat of seats) {
                         }
                         else {
                             document.getElementById('coupon').value = "";
-                            alert('Invalitd Code')
+                            alert('Invalitd Code');
+                            location.reload();
                         }
                     })
                 }
