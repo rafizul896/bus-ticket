@@ -1,9 +1,9 @@
 let avilableSeat = parseInt(document.getElementById('avilableSeat').innerText);
 let yourSeat = parseInt(document.getElementById('yourSeat').innerText);
 let totalPrice = parseInt(document.getElementById('totalPrice').innerText);
+let submit = document.getElementById('submit');
 let array = [];
 let discount = 0;
-// const number = document.getElementById('number').value;
 
 const seats = document.querySelectorAll(".kbd");
 
@@ -11,7 +11,13 @@ for (const seat of seats) {
     seat.addEventListener('click', function () {
         if (array.includes(seat) !== true) {
             array.push(seat);
-            if (array.length <= 4) {
+            if ((array.length <= 4)) {
+                const number = document.getElementById('number');
+                number.addEventListener('change', function () {
+                    if (number.value.length > 2) {
+                        submit.classList.remove('btn-disabled');
+                    }
+                })
                 seat.classList.add('bg-[#1DD100]');
                 avilableSeat = avilableSeat - 1;
                 const currentAvilableSeat = document.getElementById('avilableSeat');
@@ -57,9 +63,6 @@ for (const seat of seats) {
                         const inputPart = document.getElementById('inputPart');
                         let grandTotal = document.getElementById('grandTotal');
                         let grandTotalCal;
-                        const number = document.getElementById('number').value;
-
-
 
                         if ((array.length === 4) && (offerDis === input)) {
                             discount = 550 * 0.15;
@@ -89,6 +92,9 @@ for (const seat of seats) {
                             discountContainer.appendChild(price);
                             grandTotalCal = totalPrice - discount;
                             grandTotal.innerText = grandTotalCal;
+
+                            // 
+
                         }
                         else {
                             document.getElementById('coupon').value = "";
@@ -99,23 +105,28 @@ for (const seat of seats) {
             }
             else {
                 alert('Kom kore kin');
+                location.reload();
             }
         }
     })
 }
 
-// const submit = document.getElementById('submit');
-// submit.addEventListener('click', function () {
-//     if (array.length > 0) {
-//         // number.classList.remove('btn-disabled');
-//         console.log('okk')
-//     }
-// })
+const main = document.getElementsByClassName('mainPart')
+const success = document.getElementById('hidden');
 
-// const numbers = document.getElementById('number');
-// let hello;
-// numbers.addEventListener('keyup', function(event){
-//     hello.push(event.value)
-// })
+submit.addEventListener('click', function () {
+    for (const item of main) {
+        item.classList.add('hidden');
+    }
+    success.classList.remove('hidden');
+})
 
+const Continue = document.getElementById('continue');
+Continue.addEventListener('click', function () {
+    success.classList.add('hidden')
+    for(const item of main){
+        item.classList.remove('hidden');
+    }
+    location.reload()
+})
 

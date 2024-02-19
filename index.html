@@ -23,7 +23,7 @@
 </head>
 
 <body class="raleway bg-[#F7F8F8]">
-    <header class="w-[90%] lg:w-[80%] mx-auto max-w-[1440px]">
+    <header class="w-[90%] lg:w-[80%] mx-auto max-w-[1440px] mainPart">
         <!-- navber -->
         <nav>
             <div class="navbar flex justify-between px-0">
@@ -68,9 +68,12 @@
                 <p class="lg:text-lg font-medium text-[#fff] max-w-[90%] lg:max-w-[55%] text-center">Yes, you can run
                     unit tests and view the results directly within the app. The integrated testing features allow for a
                     streamlined .</p>
-                <a href="#phParibahan"  class="btn bg-[#1DD100] text-black border-0 hover:border hover:bg-[#1DD10033] hover:border-[#1DD100] hover:text-[#1DD100]"> Buy Tickets </a>
+                <a href="#phParibahan"
+                    class="btn bg-[#1DD100] text-black border-0 hover:border hover:bg-[#1DD10033] hover:border-[#1DD100] hover:text-[#1DD100]">
+                    Buy Tickets </a>
             </div>
-            <div class="flex flex-col lg:flex-row gap-5 relative lg:absolute  lg:bottom-[-50px] transform -translate-x-1/2  left-[50%] lg:min-w-[750px] bottom-[30px] w-[90%] lg:w-auto">
+            <div
+                class="flex flex-col lg:flex-row gap-5 relative lg:absolute  lg:bottom-[-50px] transform -translate-x-1/2  left-[50%] lg:min-w-[750px] bottom-[30px] w-[90%] lg:w-auto">
                 <div
                     class="flex justify-center items-center gap-5 px-5 rounded-2xl border-b-2 border-[#1DD100] bg-white h-24">
                     <img src="./images/people.png" alt="">
@@ -100,7 +103,7 @@
     </header>
     <main class="w-[90%] lg:w-[80%] mx-auto max-w-[1440px]">
         <!-- Best offers for you -->
-        <section class="my-32 flex flex-col justify-center items-center gap-8">
+        <section  class="my-32 flex flex-col justify-center items-center gap-8 mainPart">
             <h1 class="text-2xl lg:text-4xl font-bold">Best offers for you</h1>
             <div class="flex flex-col lg:flex-row gap-5 inter">
                 <div class="flex divide-x-2  divide-dashed divide-white bg-[#FFBF0F] px-5 lg:px-10 py-10 rounded-xl">
@@ -133,7 +136,7 @@
             <button class="btn text-[#1dd100] border hover:bg-[#1DD10033] border-[#1DD100]">See All Offers</button>
         </section>
         <!-- PH paribahan -->
-        <section id="phParibahan" class="border-t-2 border-[#1DD100] rounded-[40px] pt-14">
+        <section id="phParibahan" class="border-t-2 border-[#1DD100] rounded-[40px] pt-14 mainPart">
             <h1 class="text-2xl lg:text-4xl font-bold text-center">P.H Paribahan</h1>
             <p class="text-lg font-medium text-[#03071299] text-center mt-5">Yes, you can run unit tests and view the
                 results directly within the app. The integrated <br> testing
@@ -146,7 +149,8 @@
                             <img class="w-auto h-auto" src="./images/bus-logo.png" alt="">
                             <div class="space-y-1">
                                 <h1 class="text-[15px] lg:text-4xl font-bold">Greenline Paribahan</h1>
-                                <p class="text-xs lg:text-base font-medium text-[#03071299]">Coach-009-WEB ! AC_Business</p>
+                                <p class="text-xs lg:text-base font-medium text-[#03071299]">Coach-009-WEB ! AC_Business
+                                </p>
                             </div>
                         </div>
                         <div>
@@ -178,16 +182,16 @@
             </div>
         </section>
         <!-- Seat -->
-        <section class="bg-[#fff] p-5 my-10 rounded-2xl ">
+        <section class="bg-[#fff] p-5 my-10 rounded-2xl mainPart">
             <div class="lg:grid grid-cols-5 gap-10 mt-10 lg:divide-x-2 divide-dashed divide-[#0307124d]">
                 <div class="col-span-3 space-y-10">
                     <h1 class="text-2xl font-semibold">Select Your Seat</h1>
                     <div class="flex justify-between border-y-2 py-5 border-dashed">
-                        <div class="flex">
+                        <div class="flex items-center gap-2">
                             <img src="./images/seat-gray.png" alt="">
                             <p>Available</p>
                         </div>
-                        <div class="flex">
+                        <div class="flex items-center gap-2">
                             <img src="./images/seat-green-filled.png" alt="">
                             <p>Selected</p>
                         </div>
@@ -273,47 +277,72 @@
                     <h1 class="text-2xl font-semibold">Select Your Seat</h1>
                     <div class="mt-10">
                         <!-- Calculation -->
-                        <div class="space-y-5 lg:space-y-8 py-10 lg:p-5 lg:bg-[#b1b7b71d] rounded-2xl">
-                            <div class="flex justify-between px-6 font-bold">
+                        <div class="space-y-5 lg:space-y-8 py-10 lg:p-5 lg:bg-[#687c7c1d] rounded-2xl">
+                            <div class="flex justify-between pt-3 px-6 font-bold">
                                 <p>Seat <span id="yourSeat" class="bg-[#1DD100] text-white px-2 rounded-lg">0</span></p>
                                 <p>Class</p>
                                 <p>Price</p>
                             </div>
-                            <div id="addSeat" class="h-auto border-y-2 border-dashed py-5 grid grid-cols-3 text-center gap-5 text-sm"></div>
+                            <div id="addSeat"
+                                class="h-auto border-y-2 border-dashed py-5 grid grid-cols-3 text-center gap-5 text-sm">
+                            </div>
                             <div class="flex justify-between px-6 font-semibold text-sm">
                                 <h3>Total Price</h3>
                                 <h3>BDT <span id="totalPrice">0</span></h3>
                             </div>
                             <div id="inputPart" class="flex justify-between px-1 lg:px-5 gap-1 lg:gap-0">
-                                <input id="coupon" class="w-[96%] text-sm pl-4 lg:pr-24 py-[12px] rounded-xl border" type="text" placeholder="Have any cocupon?">
+                                <input id="coupon" class="w-[96%] text-sm pl-4 lg:pr-24 py-[12px] rounded-xl border"
+                                    type="text" placeholder="Have any cocupon?">
                                 <button id="disBtn" class="btn btn-disabled bg-[#1DD100] text-white">Apply</button>
                             </div>
-                            <div id="discountPrice" class="h-auto border-y-2 border-dashed py-5 px-6 flex text-center justify-between text-sm"></div>
-                            <div class="flex justify-between px-6 font-semibold text-sm">
+                            <div id="discountPrice"
+                                class="h-auto border-y-2 border-dashed py-5 px-6 flex text-center justify-between text-sm">
+                            </div>
+                            <div class="flex justify-between px-6 pb-3 font-semibold text-sm">
                                 <h1>Grand Total</h1>
                                 <h1>BDT <span id="grandTotal">0</span></h1>
                             </div>
                         </div>
                         <!-- Form -->
-                        <div class="flex flex-col gap-7 mt-10 lg:p-5">
-                            <label class="font-semibold" for="name">Passenger Name*</label>
-                            <input class="p-5 border rounded-md" id="name" type="text" placeholder="Enter your name">
-                            <label class="font-semibold" for="number">Phone Number*</label>
-                            <input id="number" class="p-5 border rounded-md" type="number" placeholder="Enter your phone number">
-                            <label class="font-semibold" for="email">Email ID</label>
-                            <input id="email" class="p-5 border rounded-md" type="email" placeholder="Enter your email id">
-                            <button id="submit" class="btn btn-disabled bg-[#1DD100] text-white">Next</button>
-                            <div class="flex justify-between underline">
-                                <p>Terms and Conditions</p>
-                                <p>Cancellation Policy</p>
+                        <div>
+                            <div class="flex flex-col gap-7 mt-10 lg:p-5">
+                                <label class="font-semibold" for="name">Passenger Name*</label>
+                                <input class="p-5 border rounded-md" id="name" type="text" placeholder="Enter your name"
+                                    required>
+                                <label class="font-semibold" for="number">Phone Number*</label>
+                                <input id="number" class="p-5 border rounded-md" type="number"
+                                    placeholder="Enter your phone number" required>
+                                <label class="font-semibold" for="email">Email ID</label>
+                                <input id="email" class="p-5 border rounded-md" type="email"
+                                    placeholder="Enter your email id" required>
+                                <button id="submit" class="btn btn-disabled bg-[#1DD100] text-white">Next</button>
+                                <div class="flex justify-between underline">
+                                    <p>Terms and Conditions</p>
+                                    <p>Cancellation Policy</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+        <!-- Success -->
+        <section id="hidden" class="hidden">
+            <div
+                class="flex flex-col justify-center items-center bg-[#FFF] space-y-3 lg:w-[55%] mx-auto my-20 p-5 py-10 lg:p-16 rounded-2xl shadow">
+                <img src="./images/success.png" alt="">
+                <h3 class="text-xl lg:text-2xl font-bold">SUCCESS</h3>
+                <p class="text-center text-sm lg:text-lg font-semibold">
+                    Thank you for Booking Our Bus Seats. <br class="lg:inline hidden">We are working hard to find the
+                    best service and deals for you.
+                </p>
+                <p class="text-[#4A4A4A] text-center text-xs lg:text-sm">Shortly you will find a confirmation in your
+                    email.</p>
+                <button id="continue" class="bg-[#27AE60] text-white py-2 px-14 rounded-3xl">Continue</button>
+            </div>
+        </section>
     </main>
-    <footer class="bg-black text-white inter py-10">
+    <footer class="bg-black text-white inter py-10 mainPart">
         <div class="w-[90%] lg:w-[80%] mx-auto max-w-[1440px]">
             <div
                 class="flex flex-col lg:flex-row items-center text-center gap-5 justify-between border-b-2 border-dashed border-[#ffffff4d] py-10">
