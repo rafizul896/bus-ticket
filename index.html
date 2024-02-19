@@ -273,25 +273,25 @@
                     <h1 class="text-2xl font-semibold">Select Your Seat</h1>
                     <div class="mt-10">
                         <!-- Calculation -->
-                        <div class="space-y-5 lg:space-y-10 py-10 lg:p-5 lg:bg-[#b1b7b71d] rounded-2xl">
-                            <div class="flex justify-center gap-10 lg:gap-20 font-bold">
+                        <div class="space-y-5 lg:space-y-8 py-10 lg:p-5 lg:bg-[#b1b7b71d] rounded-2xl">
+                            <div class="flex justify-between px-6 font-bold">
                                 <p>Seat <span id="yourSeat" class="bg-[#1DD100] text-white px-2 rounded-lg">0</span></p>
                                 <p>Class</p>
                                 <p>Price</p>
                             </div>
                             <div id="addSeat" class="h-auto border-y-2 border-dashed py-5 grid grid-cols-3 text-center gap-5 text-sm"></div>
-                            <div class="flex justify-around gap-20 font-semibold text-sm">
+                            <div class="flex justify-between px-6 font-semibold text-sm">
                                 <h3>Total Price</h3>
                                 <h3>BDT <span id="totalPrice">0</span></h3>
                             </div>
-                            <div class="flex justify-between">
-                                <input id="copupon" class="text-sm pl-4 lg:pr-24 py-4 rounded-xl border" type="text" placeholder="Have any cocupon?">
-                                <button class="btn bg-[#1DD100] text-white">Apply</button>
+                            <div id="inputPart" class="flex justify-between px-1 lg:px-5 gap-1 lg:gap-0">
+                                <input id="coupon" class="w-[96%] text-sm pl-4 lg:pr-24 py-[12px] rounded-xl border" type="text" placeholder="Have any cocupon?">
+                                <button id="disBtn" class="btn btn-disabled bg-[#1DD100] text-white">Apply</button>
                             </div>
-                            <div id="discount" class="h-auto border-y-2 border-dashed py-5 grid grid-cols-3 text-center gap-5 text-sm"></div>
-                            <div class="flex justify-between font-semibold text-sm">
+                            <div id="discountPrice" class="h-auto border-y-2 border-dashed py-5 px-6 flex text-center justify-between text-sm"></div>
+                            <div class="flex justify-between px-6 font-semibold text-sm">
                                 <h1>Grand Total</h1>
-                                <h1>BDT <span id="totalPrice">0</span></h1>
+                                <h1>BDT <span id="grandTotal">0</span></h1>
                             </div>
                         </div>
                         <!-- Form -->
@@ -299,10 +299,10 @@
                             <label class="font-semibold" for="name">Passenger Name*</label>
                             <input class="p-5 border rounded-md" id="name" type="text" placeholder="Enter your name">
                             <label class="font-semibold" for="number">Phone Number*</label>
-                            <input id="number" class="p-5 border rounded-md" type="text" placeholder="Enter your phone number">
+                            <input id="number" class="p-5 border rounded-md" type="number" placeholder="Enter your phone number">
                             <label class="font-semibold" for="email">Email ID</label>
-                            <input id="email" class="p-5 border rounded-md" type="text" placeholder="Enter your email id">
-                            <button id="submit" class="btn bg-[#1DD100] text-white">Next</button>
+                            <input id="email" class="p-5 border rounded-md" type="email" placeholder="Enter your email id">
+                            <button id="submit" class="btn btn-disabled bg-[#1DD100] text-white">Next</button>
                             <div class="flex justify-between underline">
                                 <p>Terms and Conditions</p>
                                 <p>Cancellation Policy</p>
